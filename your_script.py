@@ -9,6 +9,7 @@ def get_random_joke():
         joke = response.json()
         setup = joke['setup']
         punchline = joke['punchline']
+        priny(f"Result: {response}")
         print(f"The Joke: {setup}")
         print(f"Punchline: {punchline}")
     else:
